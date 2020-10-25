@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "My first nodeJs project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelpena21/guia-hoteles.git"
+  },
+  "author": "Samuel Peña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelpena21/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/samuelpena21/guia-hoteles#readme"
+}
