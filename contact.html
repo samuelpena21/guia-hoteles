@@ -17,15 +17,15 @@
   <body>
     <!--Nav Bar defined-->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" >
-        <a class="navbar-brand" href="#">Hoteles</a>
+        <a class="navbar-brand" href="/index.html">Hoteles</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
     
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./about.html">Nosotros</a>
@@ -33,8 +33,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./prices.html">Precios</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contacto</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contacto</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -54,59 +54,38 @@
     <div class="container">
         <nav aria-label="breadcrumb"> 
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                <li class="breadcrumb-item" ><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item" ><a href="./about.html">Nosotros</a></li>
+                <li class="breadcrumb-item" ><a href="./prices.html">Precios</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+
             </ol>
         </nav>
-
-        <div class="d-flex">
-                <div class="col-4"><h5>Playas</h5><p>Visita las mas hermosas playas</p></div>
-                <div class="col-4"><h5>Ambientes</h5><p>Disfruta de los mejores ambientes</p></div>
-                <div class="col-4"><h5>Gastronomia</h5><p>Comida expectacular</p></div>
-        </div>
-        <hr class="my-6">
-
-        
-        <div class="d-flex flex-wrap ">
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h6>Hotel Punta Cana</h6>
-                    <p>Excelente hotel ubicado en las playas de Punta Cana</p>
+        <div class="container">
+            <h3>Contactenos</h3>
+            <br>
+            <p>Si necesita mas informacion acerca de alguno de nuestros productos, 
+                escribanos llenando el formulario que se encuentra a continuacion 
+                y le responderemos lo mas rapido posible con una oferta que no podra
+                ni decir que no.
+            </p>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba su email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su informacion personal con terceros.</small>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-sm btn-reserve"><span class="oi oi-plus"></span> Ver mas</button>
-                </div>
-                <hr/>
-            </div>
-             <div class="card-hotel d-flex flex-column justify-content-between">
-                 <div>
-                    <h6>Hotel Samana</h6>
-                    <p>Excelente hotel ubicado en las cercanias de la bahia de Samana.</p>    
-                 </div>
-                 <div>
-                    <button type="button" class="btn btn-primary btn-sm btn-reserve"><span class="oi oi-plus"></span> Ver mas</button>  
-                 </div>
-                <hr/>
-             </div>
-             <div class="card-hotel d-flex flex-column justify-content-between" >
-                 <div class="">
-                    <h6>Hotel Santo Domingo</h6>
-                    <p>Hotel ubicado en el centro de la ciudad de Santo Domingo</p>    
-                 </div>
-                 <div class="">
-                    <button type="button" class="btn btn-primary btn-sm btn-reserve"><span class="oi oi-plus"></span> Ver mas</button>  
-                 </div>
-                <hr/>
-             </div>
-             <div class="card-hotel d-flex flex-column justify-content-between" >
-                 <div class="">
-                    <h6>Hotel Santiago</h6>
-                    <p>Hotel ubicado en el centro de la ciudad corazon</p>    
-                 </div>
-                 <div class="">
-                    <button type="button" class="btn btn-primary btn-sm btn-reserve"><span class="oi oi-plus"></span> Ver mas</button>  
-                 </div>
-                <hr/>
-             </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Escriba su nombre">
+                  </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Descripcion</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba a continuacion el nombre del hotel o la descripcion que desea"></textarea>
+                  </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
         </div>
     </div>
 
