@@ -1,12 +1,13 @@
 .jumbotron {
-    background-color: lightcyan;
     color: black;
     margin-top: 50px;
+    background-image: url("../images/hotel-banner.jpg");
+    background-size: cover;
 }
 
 footer {
     padding: 10px 10px 0 10px;
-    background-color: lightcyan;
+    background-color: rgba(204, 236, 241, 0.945);
     margin-bottom: 0px;
     margin-top: 10px;
 }
@@ -16,13 +17,13 @@ footer {
 }
 
 .card-hotel {
-    flex: 1 150px;
-    padding: 2px 5px 2px 5px;
+    flex: 1 200px;
     margin: 10px;
 }
 
 .btn-reserve {
-    width: 80%;
+    width: 100%;
+    border-radius: 0px;
 }
 
 .footer-address-icon {
