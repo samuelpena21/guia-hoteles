@@ -70,17 +70,17 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="./images/hotel-punta-cana.jpg" alt="hotel punta cana img">
                 <div class="card-body">
-                    <h6 class="card-title">Hotel Punta Cana</h6>
+                    <h6 class="card-title" data-toggle="tooltip" data-placement="top" title="Los primeros 5 que reserven tienen viaje gratis a la isla Saona" >Hotel Punta Cana</h6>
                     <p class="card-text">Excelente hotel ubicado en las playas de Punta Cana</p>
                 </div>
                 <div class="card-footer">
-                    <button type="button" class="btn btn-primary btn-sm btn-reserve btn-color" data-toggle="modal" data-target="#reserveModal"><span class="oi oi-plus"></span> Reservar</button>  
+                    <button type="button" class="btn btn-primary btn-sm btn-reserve btn-color" data-toggle="popover" data-content="No se hacen reservaciones actualmente"><span class="oi oi-plus"></span> Reservar</button>  
                 </div>
             </div>
              <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="./images/hotel-samana.jpg" alt="hotel samana img">
                  <div class="card-body">
-                    <h6 class="card-title">Hotel Samana</h6>
+                    <h6 class="card-title" data-toggle="tooltip" data-placement="top" title="Nado con Ballenas Jorobadas incluido">Hotel Samana</h6>
                     <p class="card-text">Excelente hotel ubicado en las cercanias de la bahia de Samana.</p>    
                  </div>
                  <div class="card-footer">
@@ -100,7 +100,7 @@
              <div class="card card-hotel d-flex flex-column justify-content-between" >
                 <img class="card-img-top" src="./images/hotel-la-romana.jpg" alt="hotel la romana img">
                  <div class="card-body">
-                    <h6 class="card-title">Hotel La Romana</h6>
+                    <h6 class="card-title" data-toggle="tooltip" data-placement="top" title="Viaje gratis a la isla Saona incluido">Hotel La Romana</h6>
                     <p class="card-text">Hotel ubicado en las afueras de la ciudad de La Romana</p>    
                  </div>
                  <div class="card-footer">
@@ -146,7 +146,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Enviar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
             </div>
           </div>
         </div>
@@ -181,5 +181,11 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="popover"]').popover()
+        });
+    </script>
   </body>
 </html>
