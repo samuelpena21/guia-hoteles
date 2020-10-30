@@ -1,0 +1,29 @@
+.jumbotron {
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  background-image: url("../images/hotel-banner.jpg");
+  background-size: cover; }
+
+footer {
+  padding: 10px 10px 0 10px;
+  background-color: #ccecf1;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.btn-color {
+  background-color: brown; }
+
+.card-hotel {
+  flex: 1 200px;
+  margin: 10px; }
+
+.btn-reserve {
+  width: 100%;
+  border-radius: 0px; }
+
+.footer-address-icon {
+  padding-right: 10px; }
+
+.tab-content {
+  padding-top: 10px; }
