@@ -89,7 +89,12 @@
         </div>
         <hr class="my-6">
 
-        
+        <div id="container">
+            <form class="center">
+                <label for="testmodal">Open Modal</label>
+                <button id="testmodal" class="btn btn-primary" type="submit" data-toggle="modal" data-target="#reserveModal">Open</button>
+            </form>
+        </div>
         <div class="d-flex flex-wrap ">
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="./images/hotel-punta-cana.jpg" alt="hotel punta cana img">
@@ -212,6 +217,27 @@
             $('.carousel').carousel({
                 interval: 5000
             })
+            $('#reserveModal').on('show.bs.modal', function (e){
+                console.log('Esto se esta mostrando ahora mismo');
+                $("#testmodal").removeClass('btn-primary');
+                $("#testmodal").addClass('btn-success');
+                $("#testmodal").prop('disabled', true);
+                
+            });
+            $('#reserveModal').on('shown.bs.modal', function (e){
+                console.log('Esto se termino de mostrar');
+
+            });
+            $('#reserveModal').on('hide.bs.modal', function (e){
+                console.log('Esto se esta ocultando ahora mismo')
+            });
+            $('#reserveModal').on('hidden.bs.modal', function (e){
+                console.log('Esto se esta oculto')
+                $("#testmodal").removeClass('btn-success');
+                $("#testmodal").addClass('btn-primary');
+                $("#testmodal").prop('disabled', false);
+
+            });
         });
 
     </script>
